@@ -68,21 +68,96 @@ nav{
     padding: 0 4px;
     color: #fff;
 }
-
 .specialize-container{
     width: 80%;
     margin: 0 auto;
     text-align: center;
 }
-
 .specialize-container h3{
     font-size: 35px;
 }
-
 .specialize-container p{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 57px;
     font-size: 24px;
+}
+/*.first-p{*/
+.bottom-card p{
+    font-size: 16px;
+    padding: 10px;
+    color: #fff;
+}
+.card{
+    width: 250px;
+    height: 270px;
+    margin-bottom: 80px;
+    overflow: hidden;
+}
+.top-card{
+    background: #ffea00;
+    height: 80%;
+}
+.top-card p{
+    /*margin-top: 165px;*/
+    font-size: 20px;
+    /*vertical-align: bottom;*/
+    position: relative;
+    top: -60px;
+}
+.bottom-card{
+    background: #414146;
+    position: relative;
+    top: -30px;
+    height: 30%;
+}
+.specialize-cards{
+    display: flex;
+    justify-content: space-between;
+}
+
+.portfolio{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.portfolio h4{
+    background: #424147;
+    padding: 0 8px;
+    font-size: 18px;
+    display: inline-block;
+    color: #f5e10a;
+    margin-bottom: 30px;
+}
+.portfolio p{
+    color: #424146;
+    font-size: 16px;
+}
+.toggles button{
+    border: none;
+    color: #424146;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 20px 5px;
+}
+.toggles button:after{
+    content: ' / ';
+}
+.toggles button:last-child:after{
+    content: '';
+}
+.posts{
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.posts img{
+    width: 95%;
+    /*padding: 20px;*/
+}
+
+body{
+    height: 4000px;
 }
 
 
@@ -130,5 +205,29 @@ nav{
         position: relative;
         top: 30px;
         right: 115px;
+    }
+    .top-slide{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .top-slide h2{
+        font-size: 32px;
+        padding: 0 13px;
+    }
+    .top-slide p{
+        font-size: 16px;
+    }
+    .specialize-container p{
+        font-size: 16px;
+    }
+    .specialize-cards{
+        display: flex;
+        flex-direction: column;
+        /*justify-content: center;*/
+        align-items: center;
+    }
+    .posts{
+        display: grid;
+        grid-template-columns: auto;
     }
 }
